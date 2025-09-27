@@ -10,3 +10,5 @@ function trace(A)
         println("error: not square matrix")
     end
 end
+
+println(trace([1 1 1;2 2 2; 3 3 3]))

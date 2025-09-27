@@ -10,4 +10,5 @@ function logistic(a, x_ini, n_max)
 end
 
 t = 1:1:50
-plot(t, logistic(4, 0.1, 50), xlabel = "n", ylabel = "x_n", title = "Logistic Map(a = 3.5)")
+plot(t, logistic(4.0, 0.1, 50), xlabel = "n", ylabel = "x", title = "Logistic Map(a = 4.0)")
+savefig("kadai4-1_4.0.png")

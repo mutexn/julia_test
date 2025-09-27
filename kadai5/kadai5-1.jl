@@ -16,7 +16,8 @@ function create_julia_set(c, n_max, n_mesh)
     z = Complex.(x', y)
     n_iter = iter_number.(c, z, n_max)
     heatmap(x, y, log10.(n_iter))
+    savefig("kadai5-1.png")
 end
 
 
-create_julia_set(Complex(0, 2), 1000, 400)
+create_julia_set(Complex(0.25, 0.2), 1000, 400)

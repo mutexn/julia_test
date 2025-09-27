@@ -22,9 +22,10 @@ function fib_2(n)
     elseif n == 2
         return 1
     else
-        return fib(n-2) + fib(n-1)
+        return fib_2(n-2) + fib_2(n-1)
     end
 end
 
-println(@time fib_1(100))
-println(@time fib_2(100))
+println(@time fib_1(20), @time fib_2(20))
+
+# 速度に大きな差が出る理由は、計算の実行回数がfib_2のほうが大きいため。
